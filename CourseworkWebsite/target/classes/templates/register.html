@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link id= "pagestyle" rel="stylesheet" href="../static/CSS/style.css" th:href="@{CSS/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+    <title>Register</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<img src="../static/Images/RoyalOak.png" th:src="@{/Images/RoyalOak.png}" />
+
+<header>
+
+    <h1>Traditional Blog</h1>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Username :
+                </td>
+                <td>
+                    <input type="text" placeholder="Name" name="" minlength="4">
+                </td>
+            </tr>
+            <tr>
+            <td>
+                Password :
+            </td>
+            <td>
+                <input type="Password" placeholder="Password" name="" minlength="4">
+            </td>
+        </tr>
+
+        </table>
+    </form>
+</header><br>
+
+<nav>
+    <button onclick= "swapStyleSheet('../static/CSS/darkstyle.css')"  class="night" id="night">NIGHT</button>
+    <button onclick= "swapStyleSheet('../static/CSS/style.css')" class="day" id="day">DAY</button>
+    <ul class="navbar-nav mr-auto">
+
+        <li><a href="index.html" th:href="@{/}">Home</a>
+            <a href="abortion.html" th:href="@{/abortion}">Abortion</a>
+            <a href="drugs.html" th:href="@{/drugs}">Drugs</a>
+            <a href="art_culture.html" th:href="@{/art_culture}">Art & Culture</a>
+            <a href="contact.html" th:href="@{/contact}">Contact</a>
+            <a href="register.html" th:href="@{/register}">Register</a>
+            <a href="users.html" th:href="@{/users}">Users</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<main>
+    <img src="../static/Images/magnaCarta.jpg" th:src="@{/Images/magnaCarta.jpg}" />
+    <form th:action = "@{register.html}" method="post" th:object="${user}">
+        <table>
+            <tr>
+                <td>
+                    Create Username :
+                </td>
+                <td>
+                    <input type="text" th:field= "*{userName}" placeholder="Username" name="" minlength="4">
+                </td>
+            </tr>
+            <tr>
+            <td>
+                Create Password :
+            </td>
+            <td>
+                <input type="Password" th:field= "*{password}" placeholder="Password" name="" minlength="4">
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    Email Address :
+                </td>
+                <td>
+                    <input type="email" th:field= "*{email}" placeholder="Email" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date of Birth :
+                </td>
+                <td>
+                    <input type="date" placeholder="Date" name="">
+                </td>
+            </tr>
+
+            <td>
+            Gender :
+            <td>
+            <select id="Gender"required="required" >
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+
+            </select>
+        </td>
+            <tr>
+                <td>
+                    <input type="submit" name="">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p>
+    </p>
+    <footer>
+        &copy; Hamza Malik 2019
+    </footer>
+</main>
+</body>
+</html>

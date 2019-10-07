@@ -1,0 +1,100 @@
+/* designs header */
+header{
+
+height: 125px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+/* designs h1 */
+h1 {
+    margin: 0px;
+    height: 125px;
+    color: #000000;
+    background-color: #4fc8ff;
+    border: 10px solid #00f9ff;
+    text-align: center;
+    font-size: 75px;
+}
+/* designs circle that follows cursor */
+.circle{
+     width: 20px;
+     height: 20px;
+     border: 1px solid black;
+     position: absolute;
+     border-radius: 15px;
+ }
+/* makes images responsive to changes to the size of the window */
+img {
+    max-width: 70%;
+    height: auto;
+    width: auto\9;
+}
+/* designs the night button */
+.night{
+    cursor: pointer;
+    background: black;
+    color :white;
+    max-width: 70%;
+    height: auto;
+    width: auto\9;
+}
+
+/* designs the day button */
+.day{
+    cursor: pointer;
+    background: #4fc8ff;
+    color: black;
+    max-width: 70%;
+    height: auto;
+    width: auto\9;
+}
+/* designs nav */
+nav {
+    height: 75px;
+    background-color: #a0f8ff;
+
+}
+/* designs body */
+body{
+
+    background-color: #00daff;
+    text-align: center;
+
+}
+button{
+    cursor: pointer;
+}
+
+main{
+
+    text-align: center;
+    image-orientation: from-image;
+
+}
+
+ul{
+    font-size: 20px;
+    list-style-type: none;
+    margin-top: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+footer {
+    height: 50px;
+    background-color: #a0f8ff;
+
+    bottom: 0;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+/* input validation  */
+input:invalid{
+    background-color: red;
+    color: pink;
+}
+input:valid{
+}
+

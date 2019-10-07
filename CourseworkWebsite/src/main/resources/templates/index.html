@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <link id= "pagestyle" rel="stylesheet" href="../static/CSS/style.css" th:href="@{CSS/style.css}"/>
+    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
+
+
+    <title>Home</title>
+</head>
+
+<body>
+<img src="../static/Images/RoyalOak.png" th:src="@{/Images/RoyalOak.png}" />
+<header>
+
+    <h1>Traditional Blog</h1>
+
+    <form>
+    <table>
+        <tr>
+            <td>
+                Username :
+            </td>
+            <td>
+                <input type="text" placeholder="Name" name="" minlength="4">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password :
+            </td>
+            <td>
+                <input type="Password" placeholder="Password" name="" minlength="4">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</header><br>
+
+    <nav>
+        <button onclick= "swapStyleSheet('../static/CSS/darkstyle.css')"  class="night" id="night">NIGHT</button>
+        <button onclick= "swapStyleSheet('../static/CSS/style.css')" class="day" id="day">DAY</button>
+        <ul class="navbar-nav mr-auto">
+
+            <li><a href="index.html" th:href="@{/}">Home</a>
+            <a href="abortion.html" th:href="@{/abortion}">Abortion</a>
+            <a href="drugs.html" th:href="@{/drugs}">Drugs</a>
+            <a href="art_culture.html" th:href="@{/art_culture}">Art & Culture</a>
+            <a href="contact.html" th:href="@{/contact}">Contact</a>
+                <a href="register.html" th:href="@{/register}">Register</a>
+                <a href="users.html" th:href="@{/users}">Users</a>
+            </li>
+
+        </ul>
+
+    </nav>
+<main>
+
+    <img src="../static/Images/aristotle-and-plato-raphael.jpg" th:src="@{/Images/aristotle-and-plato-raphael.jpg}" />
+    <p> Welcome! This blog will mainly consist of political dialogue.
+        <br/> While the main focus of this blog
+        is to discuss traditionalism and conservatism it will be open to all including those who disagree.
+        <br/>
+        Free speech is essential to the purpose of this blog. To browse through blog posts you will not need an account.
+        <br/>
+        However in order to post and make comments of posts you will need to register an account with an email address.
+        <br/>
+        Although this blog is primarily about politics you can also make posts and discuss topics such as
+        <br/>
+        philosophy, culture, society, religion, music, history, books, technology etc.
+        <br/>
+    </p>
+
+    <footer>
+
+
+        &copy; Hamza Malik 2019
+    </footer>
+</main>
+</body>
+</html>
